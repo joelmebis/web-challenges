@@ -1,15 +1,17 @@
-/* Please scroll down to the start of your exercise! */
-
+/* Basisreset */
 * {
   box-sizing: border-box;
 }
 
+/* Layout: Zwei Spalten Grid */
 body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
+  margin: 0;
 }
 
+/* Abschnitte */
 section {
   background-color: lemonchiffon;
   display: grid;
@@ -20,33 +22,52 @@ section {
   background-color: skyblue;
 }
 
+/* Basis-Button-Styling */
 button {
   background-color: white;
   padding: 8px 25px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-/* Your exercise starts here. */
-
-/* Add your CSS styles below this line. Feel free to replace the comments with your code. 
-Make sure not to put your code into the comments, because then nothing will happen. */
-
+/* Button 1: Rahmen + Rundung */
 .button1 {
   border: 2px solid hotpink;
   border-radius: 8px;
 }
 
+.button1:hover {
+  background-color: hotpink;
+  color: white;
+}
+
+/* Button 2: Farbänderung */
 .button2 {
   color: #ee6644;
   background-color: rgba(255, 255, 200, 0.5);
 }
 
+.button2:hover {
+  background-color: rgba(255, 200, 150, 0.7);
+}
+
+/* Button 3: Coole Schrift */
 .button3 {
   font-family: "Courier New", Courier, monospace;
   font-size: 1.5rem;
 }
 
+.button3:hover {
+  color: #222;
+  background-color: #ffe0f0;
+}
+
+/* Button 4: Schatten */
 .button4 {
   box-shadow: rgba(253, 81, 2, 0.4) 0px 7px 20px 0px;
 }
 
-/* Feel free to play around with other properties, too. */
+.button4:hover {
+  box-shadow: rgba(253, 81, 2, 0.6) 0px 10px 25px 0px;
+  transform: translateY(-2px);
+}
