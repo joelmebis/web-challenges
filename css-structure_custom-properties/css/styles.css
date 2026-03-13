@@ -12,7 +12,6 @@ body {
 
 header {
   background: rgb(131 54 255/ 45%);
-  
 }
 
 h1 {
@@ -58,7 +57,8 @@ figure {
   gap: 10px;
   margin: 0;
   padding: 10px;
-  background-color: #ff4a11ff;
+
+  :root: --color-granite #ff4a11ff;
   border-radius: 4px;
 }
 
